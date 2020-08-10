@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="organization" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="./css/design-tokens.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Hampik</title>
+  </head>
+
+  <body>
+
+    <!-- Contenido -->
+    <section>
+      <div class="container">
+        <div class="container-left">
+          <header>
+            <img src="imgs/logo.png" alt="Hampik">
+          </header>
+          <h3>Tus citas médicas desde casa</h3>
+          <img src="imgs/img_login.png" alt="">
+        </div>
+        <div class="container-right">
+          <div class="container-center">
+            <div class="container-form">
+              <div id="txt-warning" class="">
+                <div>
+                  <img src="imgs/notificacion.png" alt="Notificación">
+                  <i>Ups</i>
+                </div>
+                <span id="close-warning-general">x</span>
+              </div>
+              <h2>Iniciar sesión</h2>
+              <p class="other-action">¿No tienes cuenta? <a href="sign-up.html">Regístrate</a></p>
+              <form action="">
+                <div class="container-input-dato">
+                  <label for="reg-nom">Nombre</label>
+                  <input class="input-dato" id="reg-nom" type="text" />
+                  <span class="txt-input-warning">Ingresa tu nombre</span>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-correo">Correo electrónico</label>
+                  <input class="input-dato" id="reg-correo" type="text" />
+                  <span class="txt-input-warning">Ingresa tu correo</span>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-contra">Contraseña</label>
+                  <input class="input-dato" id="reg-contra" type="password" />
+                  <span class="txt-input-warning">Ingresa tu contraseña</span>
+                  <span class="forget-password">
+                    <a href="recuperar-contraseña.html">
+                      Olvidé mi contraseña
+                    </a>
+                  </span>
+                </div>
+                <div class="container-button">
+                  <button class="active">Ingresar con mi usuario</button>
+                </div>
+              </form>
+            </div>
+            <div class="container-others">
+              <span class="copy">O inicia sesión con</span>
+              <div class="container-buttons">
+                <div>
+                  <img src="imgs/google.png" alt="Google">
+                </div>
+                <div>
+                  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                  </fb:login-button>
+                  <!-- <img src="imgs/facebook.png" alt="Facebook"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="ModalLogin">
+      <div class="ModalLogin__contenido">
+        <div class="ModalLogin__contenido--check">
+          <img src="imgs/check.png" alt="Check">
+        </div>
+        <div class="ModalLogin__contenido--subtitulo">Tu inició de sesión se realizó con éxito</div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '{your-app-id}',
+          cookie: true,
+          xfbml: true,
+          version: '{api-version}'
+        });
+
+        FB.AppEvents.logPageView();
+
+      };
+
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

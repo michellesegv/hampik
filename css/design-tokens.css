@@ -1,0 +1,22 @@
+:root {
+  /* colores */
+  --color-primary: #21455c;
+  --color-primary-light: #ffffff;
+  --color-secondary: #6da9b1;
+
+  --color-gray-light: #b3b3b3;
+  --color-gray: #999999;
+  --color-gray-strong: #666666;
+  --color-gray-border: #e0e0e0;
+  --color-gray-copy: #808080;
+  --color-black: #4c4c4c;
+
+  --color-blue-light: #f6f9fa;
+
+  --color-white: #ffffff;
+  --color-facebook: #0077d5;
+  --color-gmail: #ff4232;
+
+  /* fuentes */
+  --font-primary: Roboto;
+}

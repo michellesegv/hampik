@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="organization" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="./css/design-tokens.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Hampik</title>
+  </head>
+
+  <body class="sign-up">
+
+    <!-- Contenido -->
+    <section>
+      <div class="container">
+        <div class="container-left">
+          <header>
+            <img src="imgs/logo.png" alt="Hampik">
+          </header>
+          <h3>Tus citas médicas desde casa</h3>
+          <img src="imgs/img_login.png" alt="">
+        </div>
+        <div class="container-right">
+          <div class="container-center">
+            <div class="container-form">
+              <div id="txt-warning" class="">
+                <div>
+                  <img src="imgs/notificacion.png" alt="Notificación">
+                  <i>Ups</i>
+                </div>
+                <span id="close-warning-general">x</span>
+              </div>
+              <h2>Registrar mis datos</h2>
+              <p class="other-action">¿Ya tienes cuenta? <a href="index.html">Ingresar</a></p>
+              <form action="">
+                <div class="row-inputs row-50">
+                  <div class="container-input-dato">
+                    <label for="reg-nom">Nombre</label>
+                    <input class="input-dato" id="reg-nom" type="text" />
+                    <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                  </div>
+                  <div class="container-input-dato">
+                    <label for="reg-ape">Apellidos</label>
+                    <input class="input-dato" id="reg-ape" type="text" />
+                    <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                  </div>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-celu">Nro de celular</label>
+                  <input class="input-dato" id="reg-celu" type="text" />
+                  <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-correo">Correo electrónico</label>
+                  <input class="input-dato" id="reg-correo" type="text" />
+                  <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-contra">Contraseña</label>
+                  <input class="input-dato" id="reg-contra" type="password" />
+                  <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                </div>
+                <div class="container-input-dato">
+                  <label for="reg-conf-contra">Confirmar contraseña</label>
+                  <input class="input-dato" id="reg-conf-contra" type="password" />
+                  <span class="txt-input-warning">Deben ser más de “x” caracteres</span>
+                </div>
+                <div class="container-button">
+                  <button>Registrarme</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="ModalLogin">
+      <div class="ModalLogin__contenido">
+        <div class="ModalLogin__contenido--check">
+          <img src="imgs/check.png" alt="Check">
+        </div>
+        <div class="ModalLogin__contenido--texto">¡Felicitaciones!</div>
+        <div class="ModalLogin__contenido--subtitulo">Tu registro fue exitoso</div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>
